@@ -10,6 +10,7 @@
 
 body {
     background-color: #8A0000;
+    overflow-x: hidden;
 }
 
 /* ===== NAVBAR MAIN ===== */
@@ -1157,6 +1158,7 @@ nav {
         font-size: 45px
     }
 }
+
 /* ========== signature food ========= */
 .signature {
     padding: 30px 0px;
@@ -1200,6 +1202,7 @@ nav {
         letter-spacing: 0px;
     }
 }
+
 /* ============ receipes =========== */
 .recpies {
     display: flex;
@@ -1287,7 +1290,7 @@ nav {
 }
 
 .slide-container {
-    width: 1100px;
+    width: 1120px;
     height: 400px;
     position: relative;
     background: #fff;
@@ -1334,7 +1337,7 @@ nav {
     width: 550px;
     height: 550px;
     position: absolute;
-    right: -70px;
+    right: -100px;
     top: -100px;
     bottom: 0;
     z-index: 999;
@@ -2550,6 +2553,7 @@ nav {
         display: none;
     }
 }
+
 /* ============= customer ================ */
 .customer {
     padding: 40px 10px;
@@ -2561,6 +2565,7 @@ nav {
     background-color: #8A0000;
     margin: 0;
 }
+
 header {
     overflow: hidden;
     padding-bottom: 250px;
@@ -2574,7 +2579,9 @@ header {
     padding: 10px;
     display: flex;
     gap: 35px;
-    animation: scrollDown 13s linear infinite;
+    animation: scrollDown 30s linear infinite;
+    /* animation-play-state: paused; */
+
 }
 
 
@@ -2609,6 +2616,7 @@ header {
     height: 130px;
     width: 250px;
 }
+
 /* ============ mandhi container =========== */
 
 .mandhi {
@@ -2765,6 +2773,7 @@ header {
         clip-path: ellipse(50% 18%);
     }
 }
+
 /* ========== faqs container ============ */
 .faqs-container {
     display: flex;
@@ -2913,9 +2922,11 @@ footer {
     padding: 35px 0;
     /* display: flex; */
 }
+
 .logo-name {
     display: flex;
 }
+
 .footer-container {
     background-color: #fff;
     display: flex;
@@ -2995,10 +3006,12 @@ footer {
     font-size: 10px;
     margin: 6px 0;
 }
+
 .img-logo {
     height: 80px;
     width: 100px;
 }
+
 /* responsive design the footer */
 
 /* ===== Laptop screens (1024px - 1440px) ===== */
@@ -3009,7 +3022,12 @@ footer {
         padding: 20px 40px;
     }
 
-    .footer1, .footer2, .footer3, .footer4, .footer5, .footer6 {
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4,
+    .footer5,
+    .footer6 {
         flex: 1 1 30%;
     }
 }
@@ -3023,7 +3041,12 @@ footer {
         padding: 20px;
     }
 
-    .footer1, .footer2, .footer3, .footer4, .footer5, .footer6 {
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4,
+    .footer5,
+    .footer6 {
         flex: 1 1 45%;
     }
 
@@ -3041,7 +3064,12 @@ footer {
         padding: 15px;
     }
 
-    .footer1, .footer2, .footer3, .footer4, .footer5, .footer6 {
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4,
+    .footer5,
+    .footer6 {
         width: 100%;
         margin-bottom: 20px;
         text-align: center;
@@ -3058,7 +3086,8 @@ footer {
         width: 80px;
     }
 
-    .name-content1-size, .name-content-size {
+    .name-content1-size,
+    .name-content-size {
         font-size: 16px;
     }
 
