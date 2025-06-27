@@ -11,6 +11,7 @@
 body {
     background-color: #8A0000;
     overflow-x: hidden;
+    cursor: url("./briyaniimg/bhaicursor.png"), auto;
 }
 
 /* ===== NAVBAR MAIN ===== */
@@ -279,462 +280,191 @@ nav {
 }
 
 /* ====== start the main container ======= */
-.main-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10px;
+
+.banner {
+    padding: 50px 0px;
+    background-color: rgb(138, 7, 7) !important;
+    color: white;
+}
+
+/* left side of banner -wrapper ------------- */
+/* sale  section in banner */
+.gt {
+    border: none;
+    background-color: rgb(231, 231, 57);
     padding: 10px 20px;
-    background-color: #8A0000;
-    color: #fff;
-    height: 83.7vh;
 }
 
-.super-main-container {
-    width: 60%;
+.order-nowed button {
+    border: none;
+    padding: 10px;
+    background-color: rgb(222, 44, 44);
+    color: white;
 }
 
-.royal {
-    font-size: 100px;
-    font-family: "Poppins", sans-serif;
+.sale {
+    margin-top: 40px;
 }
 
-.royalBliss {
-    font-size: 90px;
-    font-family: "Poppins", sans-serif;
-}
-
-.para-main {
+.sale span {
+    margin-left: 35px;
     font-size: 30px;
-    font-family: "Poppins", sans-serif;
-
 }
 
-.content-order {
-    padding: 30px 0;
+.sale span:nth-child(3) {
+    font-size: 40px;
+    font-weight: 800;
+    color: yellow;
 }
 
-.right {
-    padding: 7px 37px;
-    background-color: #FFCC00;
-    color: #fff;
-    font-size: 30px;
+.banner-wrapper h1 {
+    font-size: 70px;
+    font-weight: 700;
+    max-width: 70%;
+}
+
+.banner-wrapper p {
+    max-width: 70%;
+    font-size: 25px;
     margin-top: 30px;
 }
 
-.now {
-    padding: 11px 30px 8px 15px;
-    background-color: #DC2525;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    margin-left: -4px;
-}
-
-.mutton-briyani {
-    padding-left: 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 26px;
-}
-
-.dollar {
-    color: #FFCC00;
-    font-size: 44px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    padding-left: 20px;
-}
-
-.truck-container {
-    display: flex;
-    gap: 40px;
-}
-
-.truck1 {
+/* right side of banner-wrapper ------------- */
+.truck {
+    width: 100px;
+    height: 180px;
+    padding: 10px 18px;
     border: none;
-    border-radius: 50px;
-    padding: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-align: center;
-    height: 160px;
 }
 
-.truck2 {
-    border: none;
-    border-radius: 50px;
-    padding: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    height: 160px;
+.truck p {
+    opacity: 80%;
+    font-size: 20px;
 }
-
-.truck1:hover {
-    border: 5px solid #FFCC00;
-
-}
-
-.truck2:hover {
-    border: 5px solid #FFCC00;
-
-}
-
-.fa-truck-fast {
-    font-size: 40px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
-
-.made {
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    padding: 6px;
-}
-
-.made1 {
+.truck p:hover {
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    padding: 6px;
+}
+.truck:hover {
+    border: 5px solid yellow;
+    border-radius: 50px;
+    
 }
 
-.sub-main-container {
-    width: 35%;
+.bir {
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.second {
-    height: 350px;
-    width: 350px;
+.biryani-grp {
+    display: flex;
+    gap: 100px;
+    animation-name: example;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.img-container {
-    border-radius: 100px;
-    padding: 20px;
-    width: 70%;
-    margin-left: 25px;
+.biryani {
+    /* width: 100%; */
+    width: 400px;
+    flex-shrink: 0;
 }
 
-.first {
-    margin-top: 80px;
-}
-
-.one {
-    height: 70px;
-    width: 70px;
-    padding: 10px;
-    margin: 0 10px;
-    opacity: 0.5;
-    background-color: #D1D8BE;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 3s ease;
-    animation: scrolldown 3s linear;
-}
-
-@keyframes scrolldown {
+@keyframes example {
     0% {
-        transform: translateY(10%);
+        transform: translateX(0)
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-400%);
     }
 
     100% {
-        transform: translateY(0%);
+        transform: translateX(-500%);
     }
 }
 
-.one:active {
-    background-color: transparent;
-    opacity: 1.5;
+.thumbnail-row {
+    display: flex;
+    gap: 30px;
 }
 
-.active {
-    background-color: transparent;
-    color: white;
-    border-radius: 10px;
+.thumbnail-row .icon {
+    width: 80px;
+    margin: 10px;
 }
 
-
-/* responsive the main-container style */
-@media only screen and (min-width:1050px) and (max-width:1250px) {
-    .super-main-container {
-        width: 50%;
-    }
-
-    .royal {
-        font-size: 80px;
-        font-family: "Poppins", sans-serif;
-    }
-
-    .royalBliss {
-        font-size: 70px;
-        font-family: "Poppins", sans-serif;
-    }
-
-    .para-main {
-        font-size: 25px;
-        font-family: "Poppins", sans-serif;
-
-    }
-
-    .sub-main-container {
-        width: 45%;
-    }
-
-    .first {
-        margin-top: 20px;
-    }
-
-    .main-container {
-        gap: 10px;
-        padding: 10px 10px;
-    }
-
-    .dollar {
-        color: #FFCC00;
-        font-size: 44px;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-        padding-left: 10px;
-    }
+.white {
+    display: flex;
 }
 
-@media only screen and (min-width:985px) and (max-width:1050px) {
-    .super-main-container {
-        width: 50%;
-    }
-
-    .royal {
-        font-size: 70px;
-    }
-
-    .royalBliss {
-        font-size: 60px;
-    }
-
-    .para-main {
-        font-size: 25px;
-
-    }
-
-    .sub-main-container {
-        width: 48%;
-    }
-
-    .first {
-        margin-top: 20px;
-    }
-
-    .main-container {
-        gap: 10px;
-        padding: 10px 10px;
-    }
-
-    .dollar {
-        color: #FFCC00;
-        font-size: 40px;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-        padding-left: 10px;
-    }
-
-    .second {
-        height: 300px;
-        width: 300px;
-    }
-
-    .right {
-        padding: 7px 30px;
-    }
-
-    .now {
-        padding: 11px 20px 8px 15px;
-    }
-
-    .one {
-        height: 60px;
-        width: 60px;
-    }
-
+.box-parent {
+    position: relative;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 985px) {
-    .main-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 20px;
-        background-color: #8A0000;
-        color: #fff;
-        height: auto;
-    }
-
-    .sub-main-container {
-        width: 100%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .super-main-container {
-        width: 100%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
+.box {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    margin-left: 8px;
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: rgba(238, 236, 236, 0.2);
+    backdrop-filter: blur(0.3px);
 }
 
+/* media query for banner section */
+@media (max-width:1400px) {
 
-@media only screen and (min-width:500px) and (max-width:600px) {
-    .main-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 20px;
-        background-color: #8A0000;
-        color: #fff;
-        height: auto;
-    }
-
-    .sub-main-container {
-        width: 100%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .super-main-container {
-        width: 100%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .royal {
-        font-size: 80px;
-    }
-
-    .royalBliss {
-        font-size: 70px;
-    }
-
-    .right {
-        padding: 7px 20px;
-    }
-
-    .now {
-        padding: 11px 13px 8px 9px;
-    }
-
-    .mutton-briyani {
-        font-size: 22px;
-    }
-
-    .dollar {
-        font-size: 36px;
-    }
-}
-
-@media only screen and (max-width:500px) {
-    .main-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 10px;
-        background-color: #8A0000;
-        color: #fff;
-        height: auto;
-    }
-
-    .sub-main-container {
-        width: 100%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .super-main-container {
-        width: 100%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .truck-container {
-        display: flex;
-        gap: 30px;
-    }
-
-    .royal {
-        font-size: 80px;
-    }
-
-    .royalBliss {
-        font-size: 60px;
-    }
-
-    .right {
-        padding: 7px 12px;
-    }
-
-    .now {
-        padding: 15px 8px 9px 6px;
-        font-size: 20px;
-    }
-
-    .mutton-briyani {
-        font-size: 22px;
-        padding-left: 3px;
-
-    }
-
-    .dollar {
-        font-size: 33px;
-        padding-left: 0px;
-    }
-
-    .first {
-        margin-top: 30px;
-    }
-
-    .one {
-        height: 50px;
+    .thumbnail-row .icon {
         width: 50px;
-        padding: 10px 5px;
+        margin: 10px;
     }
 
-    .para-main {
-        font-size: 25px;
-    }
-
-    .second {
-        height: 300px;
-        width: 300px;
+    .box {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin-left: 8px;
+        margin-top: 3px;
     }
 }
 
-@media only screen and (max-width:350px) {
-    .one {
-        height: 40px;
+@media (max-width:992px) {
+
+    .thumbnail-row .icon {
         width: 40px;
-        padding: 10px 5px;
+        margin: 5px;
     }
 
-    .truck-container {
-        display: flex;
-        gap: 20px;
+    .box {
+        position: absolute;
+        width: 50px;
+        height: 40px;
+        margin-left: 2px;
+        margin-top: 1px;
     }
 
-    .second {
-        height: 250px;
-        width: 250px;
+    .biryani {
+        width: 450px;
     }
 }
+
+
 
 /* ============ taste ========== */
 .taste-name {
@@ -815,6 +545,7 @@ nav {
     height: 150px;
     width: 150px;
     opacity: 0;
+    transition: all 0.6s ease-in-out;
 }
 
 .mini1:hover {
@@ -825,6 +556,8 @@ nav {
     height: 150px;
     width: 150px;
     opacity: 0;
+    transition: all 0.6s ease-in-out;
+
 }
 
 .mini2:hover {
@@ -835,6 +568,8 @@ nav {
     height: 150px;
     width: 150px;
     opacity: 0;
+    transition: all 0.6s ease-in-out;
+
 }
 
 .mini3:hover {
@@ -845,6 +580,8 @@ nav {
     height: 150px;
     width: 150px;
     opacity: 0;
+    transition: all 0.6s ease-in-out;
+
 }
 
 .mini4:hover {
@@ -855,6 +592,7 @@ nav {
     height: 150px;
     width: 150px;
     opacity: 0;
+    transition: all 0.6s ease-in-out;
 
 }
 

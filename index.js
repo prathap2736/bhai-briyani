@@ -2,6 +2,57 @@
 document.querySelector('.menu-icons').addEventListener('click', function() {
     document.querySelector('.navbars').classList.toggle('showbar');
 });
+// main image slider
+let b = document.getElementsByClassName("biryani-grp")[0];
+let box = document.getElementsByClassName("box");
+function move(a){
+    if (a === 0) {
+        b.style.animation = "none"; 
+        box[0].style="opacity:0";
+
+         box[1].style="opacity:1";
+          box[2].style="opacity:1";
+           box[3].style="opacity:1";
+            box[4].style="opacity:1";
+
+    }
+    else if(a === 1){
+        b.style.animation = "none";
+         box[1].style="opacity:0";
+
+            box[0].style="opacity:1";
+          box[2].style="opacity:1";
+           box[3].style="opacity:1";
+            box[4].style="opacity:1";
+    }
+     else if(a === 2){
+        b.style.animation = "none";
+         box[2].style="opacity:0";
+
+            box[0].style="opacity:1";
+          box[1].style="opacity:1";
+           box[3].style="opacity:1";
+            box[4].style="opacity:1";
+    }
+     else if(a === 3){
+        b.style.animation = "none";
+         box[3].style="opacity:0";
+
+             box[0].style="opacity:1";
+          box[1].style="opacity:1";
+           box[2].style="opacity:1";
+            box[4].style="opacity:1";
+    }
+     else if(a === 4){
+        b.style.animation = "none";
+         box[4].style="opacity:0";
+
+             box[0].style="opacity:1";
+          box[1].style="opacity:1";
+           box[3].style="opacity:1";
+            box[2].style="opacity:1";
+    }
+}
 
 // recpieces image slider
 
