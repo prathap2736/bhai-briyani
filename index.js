@@ -53,7 +53,33 @@ function move(a){
             box[2].style="opacity:1";
     }
 }
+// for layer-1 js 
+let one = document.getElementsByClassName("one")[0];
+let two = document.getElementsByClassName("two")[0];
+one.style.right = "0%";
+two.style.left = "0%";
 
+// for layer-2
+let left = document.getElementsByClassName("left")[0];
+let right = document.getElementsByClassName("right")[0];
+
+
+function slite(){
+   one.style.position="relative"; 
+   two.style.position="relative";
+
+  one.style.transition = "all 3s ease-in-out";
+  two.style.transition = "all 3s ease-in-out";
+
+  // Apply final styles that will animate
+  one.style.right = "100%";
+  two.style.left = "100%";
+
+  left.style.right = "0px";
+  right.style.left = "0px";
+  left.style.transition = "all 2s ease-in-out";
+  right.style.transition = "all 2s ease-in-out";
+}
 // recpieces image slider
 
 const slides = document.querySelectorAll('.slide');

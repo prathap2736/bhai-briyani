@@ -343,13 +343,15 @@ nav {
     opacity: 80%;
     font-size: 20px;
 }
+
 .truck p:hover {
     font-size: 16px;
 }
+
 .truck:hover {
     border: 5px solid yellow;
     border-radius: 50px;
-    
+
 }
 
 .bir {
@@ -368,7 +370,7 @@ nav {
 
 .biryani {
     /* width: 100%; */
-    width: 400px;
+    width: 360px;
     flex-shrink: 0;
 }
 
@@ -404,7 +406,7 @@ nav {
 }
 
 .thumbnail-row .icon {
-    width: 80px;
+    width: 60px;
     margin: 10px;
 }
 
@@ -418,8 +420,8 @@ nav {
 
 .box {
     position: absolute;
-    width: 90px;
-    height: 80px;
+    width: 65px;
+    height: 60px;
     margin-left: 8px;
     margin-top: 3px;
     border-radius: 5px;
@@ -783,37 +785,170 @@ nav {
 
 /* ==== special ====== */
 .special {
-    text-align: center;
-    font-size: 60px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #fff;
-    padding: 20px 0;
-    background-color: #8A0000;
-    margin: 0;
+    padding-top: 20px;
+    background-color: rgb(138, 7, 7) !important;
+    color: white;
+    height: 100vh;
 }
 
-@media only screen and (min-width:810px) and (max-width:970px) {
-    .special {
-        font-size: 48px;
+.special h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 55px;
+}
+
+/* layer-one */
+.slide-containered {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.one {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(111, 24, 24);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.one h1 {
+    text-align: end;
+    font-size: 100px;
+    font-weight: 700;
+    padding-top: 60px;
+
+}
+
+.two {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(111, 24, 24);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+.two h1 {
+    font-size: 100px;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+/* layer-two*/
+.slide2 {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    bottom: 500px;
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.left {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(187, 185, 185);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    position: relative;
+    right: 900px;
+}
+
+.right {
+    position: relative;
+    left: 900px;
+}
+
+.left img {
+    width: 600px;
+}
+
+.right h5 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 30%;
+    max-width: 80%;
+    margin-left: 60px;
+}
+
+/* media query for special section */
+/* for outer -layer */
+@media (max-width:992px) {
+    .slide-containered h1 {
+        font-size: 60px;
     }
 }
 
-@media only screen and (min-width:650px) and (max-width:810px) {
-    .special {
+@media (max-width:768px) {
+    .slide-containered h1 {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .one,
+    .two {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+/* for inner inner-layer */
+@media (max-width:1200px) {
+    .slide2 h5 {
         font-size: 35px;
     }
 }
 
-@media only screen and (min-width:500px) and (max-width:650px) {
-    .special {
-        font-size: 30px;
+@media (max-width:992px) {
+    .slide2 h5 {
+        font-size: 28px;
+    }
+
+    .left img {
+        width: 400px;
     }
 }
 
-@media only screen and (min-width:300px) and (max-width:500px) {
+@media (max-width:768px) {
+    .slide2 {
+        bottom: 260px;
+    }
+
+    .left {
+        width: 300px;
+        height: 250px;
+    }
+
+    .slide2 h5 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:560px) {
+    .slide2 h5 {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .left {
+        width: 200px;
+        height: 180px;
+    }
+}
+
+/* for overall special */
+@media (max-width:768px) {
     .special {
-        font-size: 22px;
+        height: 60vh;
     }
 }
 
@@ -2565,7 +2700,8 @@ header {
     background: #FFF085;
     color: #000;
     cursor: pointer;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin: 10px 0 0 0;
     font-size: 20px;
 }
@@ -2597,6 +2733,8 @@ header {
 .container .content-box.active .content-para {
     height: 60px;
     padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* responsive design in the gaqs container */
