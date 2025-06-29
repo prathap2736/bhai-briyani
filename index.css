@@ -9,6 +9,7 @@
 }
 
 body {
+    margin: 0;
     background-color: #8A0000;
     overflow-x: hidden;
     cursor: url("./briyaniimg/bhaicursor.png"), auto;
@@ -478,8 +479,9 @@ nav {
     color: #fff;
     background-color: #8A0000;
     margin: 0;
-
+    
 }
+
 
 /* responsive the taste */
 @media only screen and (min-width:500px) and (max-width:630px) {
@@ -2884,7 +2886,7 @@ footer {
 }
 
 .img-logo {
-    height: 80px;
+    height: 90px;
     width: 100px;
 }
 
